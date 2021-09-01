@@ -23,6 +23,7 @@ public class IntroToGenerics {
 		//define its generic variable to be two different types, String and Integer
 		SomeClass<String> scObj = new SomeClass<String>("sodapop");
 		SomeClass<Integer> scObj2 = new SomeClass<Integer>(412);
+		
 	}
 	
 	//Here a generic called Template is created as part of the calcStuff method
