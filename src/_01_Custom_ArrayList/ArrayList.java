@@ -35,17 +35,44 @@ public class ArrayList <T>{
 	
 	public void insert(int loc, T val) throws IndexOutOfBoundsException {
 		
-		T [] generics = (T[])new Object[practicegen.length+2];
+		T [] generics = (T[])new Object[practicegen.length+1];
 		
 		
+		for (int i = 0; i < generics.length; i++) {
+			
+			if(i<loc) {
+				
+				generics[i]=practicegen[i];
+			
+		}
+			
+			else if(i>loc) {
+				
+				generics[i]=practicegen[i-1];
+				
+			}
+			
+			else {
+			
+				generics[i]=val;
+				
+			}
 		
+		}
+		
+		generics=practicegen;
 	}
 	
 	public void set(int loc, T val) throws IndexOutOfBoundsException {
 		
+
+		practicegen[loc]=val;
+		
 	}
 	
 	public void remove(int loc) throws IndexOutOfBoundsException {
+		
+		
 		
 	}
 	
